@@ -1,0 +1,4 @@
+You will need dconf to export and import you profile settings. Please see this answer for details (short summary: use dconf dump /org/gnome/terminal/legacy/profiles:/ | grep -e "\[\:\|visible-name" to list the installed profiles, then import/export them via dconf dump /org/gnome/terminal/legacy/profiles:/:xx-xx-xx-xx/ > sample.dconf and dconf load /org/gnome/terminal/legacy/profiles:/:xx-xx-xx-xx/ < sample.dconf).
+
+For more details see the link
+https://askubuntu.com/questions/631481/gnome-terminal-profiles-are-not-being-loaded/694670#694670
