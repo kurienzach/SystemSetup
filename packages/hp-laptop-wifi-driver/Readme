@@ -1,0 +1,8 @@
+Extract the tar file and run sudo ./Run.sh
+Restart the system
+Do ifconfig -a
+Find the wifi interface
+Then do sudo ifconfig wifi interface up
+sudo service network-manager restart
+
+Note : Need to write a script which does all these and does the last 2 commands on every startup
