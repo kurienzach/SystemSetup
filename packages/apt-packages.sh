@@ -7,4 +7,4 @@ apt-get -y install fonts-hack-ttf
 # Install gnu stow for managing dot files
 apt-get -y install stow
 
-apt-get -y install tmux
+apt-get -y install tmux dconf-tools
