@@ -1,5 +1,5 @@
-apt-get -y install git
-apt-get -y install curl
+# Utilities
+apt-get -y install git curl axel tree 
 
 # Hack font
 apt-get -y install fonts-hack-ttf
@@ -7,4 +7,6 @@ apt-get -y install fonts-hack-ttf
 # Install gnu stow for managing dot files
 apt-get -y install stow
 
-apt-get -y install tmux dconf-tools
+apt-get -y install tmux dconf-tools openssh-server
+
+
