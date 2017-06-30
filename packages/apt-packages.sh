@@ -1,3 +1,6 @@
+# Build stuff
+apt-get -y install cmake
+
 # Utilities
 apt-get -y install git curl axel tree 
 

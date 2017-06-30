@@ -20,6 +20,7 @@ Plug 'tpope/vim-surround'
 Plug 'digitaltoad/vim-pug'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 " Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
