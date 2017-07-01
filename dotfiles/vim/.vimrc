@@ -65,6 +65,8 @@ colorscheme onedark
 "let &colorcolumn=join(range(121,999),",")
 "highlight ColorColumn ctermbg=235 guibg=#ffffff
 
+" Backspace can delete new lines, saved text (Like other editers)
+set backspace=indent,eol,start
 
 " Tab Options
 set tabstop=4           " No of visual spaces per tab
