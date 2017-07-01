@@ -22,6 +22,10 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
+# Better auto completion menu and navgitation using arrow keys
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
+
 setopt inc_append_history # Append history as commands are executed
 setopt hist_ignore_all_dups # Dont save duplicates
 setopt histignorealldups sharehistory

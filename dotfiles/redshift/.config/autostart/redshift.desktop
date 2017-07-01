@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Redshift
+Exec=redshift -l 19.07:72.87
+Icon=/usr/share/icons/Paper/24x24/apps/redshift.png
+X-GNOME-Autostart-enabled=true

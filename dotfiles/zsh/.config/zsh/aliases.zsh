@@ -51,6 +51,9 @@ alias tlc='tmux list-command'
 alias tat='tmux attach -t'
 alias trs='tmux rename-session -t'
 
-
 # Killing
 alias tks='tmux kill-session -t'
+
+# Redshift
+alias redup='redshift -l 19.07:72.87 > /dev/null 2>&1 &'
+alias redown='pkill redshift'
