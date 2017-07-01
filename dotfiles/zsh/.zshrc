@@ -2,6 +2,8 @@
 export ADOTDIR="$HOME/.config/zsh/antigen/.antigen"
 source $HOME/.config/zsh/antigen/antigen.zsh
 
+#antigen use oh-my-zsh
+
 # Plugins
 antigen bundle git
 
