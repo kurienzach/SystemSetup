@@ -11,16 +11,19 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'easymotion/vim-easymotion'
+" Show indendation with thin vertical lines
 Plug 'Yggdroot/indentLine'
 Plug 'moll/vim-bbye'
 Plug 'rking/ag.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
-Plug 'digitaltoad/vim-pug'
+" Snippets plugin and preloaded set of snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+" Emmet plugin
+Plug 'mattn/emmet-vim'
 " Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
@@ -53,10 +56,13 @@ if (empty($TMUX))
   endif
 endif
 " set t_Co=256
-let g:onedark_termcolors=16
+let g:onedark_termcolors=256
 let g:onedark_terminal_italics=1
 set background=dark
 colorscheme onedark
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 "" in case t_Co alone doesn't work, add this as well:
 "let &t_AB="\e[48;5;%dm"
 "let &t_AF="\e[38;5;%dm"
@@ -166,6 +172,16 @@ let g:deoplete#enable_at_startup = 1
 " Better buffer closing script keymap
 "nmap <C-q> <Plug>Kwbd
 :nnoremap <C-q> :Bdelete<CR>
+
+" Emmet use only for HTML and CSS
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+" Ulti snips
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Vim Multiple Cursors
 " let g:multi_cursor_use_default_mapping=0

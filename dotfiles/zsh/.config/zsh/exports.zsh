@@ -1,5 +1,8 @@
 export EDITOR="/usr/local/bin/vim"
 
+ZSH=$HOME/.config/zsh
+ZSH_CACHE_DIR="$ZSH/cache"
+
 less_options=(
   # If the entire text fits on one screen, just show it and quit. (Be more
   # like "cat" and less like "more".)
@@ -22,3 +25,7 @@ less_options=(
 );
 export LESS="${less_options[*]}"
 export PAGER='less'
+
+# Export for TMUX
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
+
