@@ -2,7 +2,7 @@
 apt-get -y install cmake
 
 # Utilities
-apt-get -y install git curl axel tree silversearcher-ag redshift
+apt-get -y install git curl axel tree silversearcher-ag redshift youtube-dl rofi xclip
 
 # Hack font
 apt-get -y install fonts-hack-ttf
