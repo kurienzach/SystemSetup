@@ -1,0 +1,6 @@
+#!/bin/sh
+
+LAN_IP=`ifconfig enp8s0 | grep 'inet ' | sed 's/.*addr:\(.*\) Bcas.*/\1/'`
+WIFI_IP=`ifconfig eno1 | grep 'inet ' | sed 's/.*addr:\(.*\) Bcas.*/\1/'`
+
+if [ "$LAN_IP" != "" ]; then echo $LAN_IP ; elif [ "$WIFI_IP" != "" ]; then echo $WIFI_IP ; fi
