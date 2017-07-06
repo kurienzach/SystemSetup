@@ -55,7 +55,6 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-" set t_Co=256
 let g:onedark_termcolors=256
 let g:onedark_terminal_italics=1
 set background=dark
@@ -63,9 +62,13 @@ colorscheme onedark
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+" set t_Co=256
 "" in case t_Co alone doesn't work, add this as well:
 "let &t_AB="\e[48;5;%dm"
 "let &t_AF="\e[38;5;%dm"
+
+" Faster tty
+set ttyfast
 
 " Change the background color after 80 column
 "let &colorcolumn=join(range(121,999),",")

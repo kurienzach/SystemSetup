@@ -51,6 +51,9 @@ zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/c
 
+# Disabled Ctrl S and Ctrl q
+stty -ixon
+
 # Source user files
 source $HOME/.config/zsh/exports.zsh
 source $HOME/.config/zsh/aliases.zsh
@@ -60,3 +63,9 @@ source $HOME/.config/zsh/config.zsh
 
 # Load all stock functions (from $fpath files) called below.
 autoload -U compaudit compinit
+
+# Open tmux by default if possible
+if [ -z "$TMUX" ]
+then
+    tmux attach -t TMUX || tmux new -s TMUX
+fi
