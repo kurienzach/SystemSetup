@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Albert
+Exec=albert
+Icon=/usr/share/icons/Paper/24x24/apps/0ad.png
+X-GNOME-Autostart-enabled=true
