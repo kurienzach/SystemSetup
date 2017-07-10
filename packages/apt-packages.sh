@@ -16,6 +16,10 @@ apt-get -y install tmux dconf-tools openssh-server
 apt-get -y vlc
 
 # Dev related
+
+# Python pip
+apt-get -y python-pip python3-pip
+
 apt-get -y apache2 mysql-server
 # Disable autostart of any of the servers
 systemctl disable apache2.service

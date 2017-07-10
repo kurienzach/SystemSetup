@@ -1,0 +1,15 @@
+# Connect / Disconnect to vpn, wifi connect etc
+nmcli con up id <con_name>
+nmcli con down id <con_name>
+eg.
+nmcli con up id iitbvpn
+
+# To increase volume of speakers above 100%
+
+## First list down all the output devices
+pactl list sinks
+
+## Then set the volume
+pactl set-sink-volume <dev_id> <percentage>
+eg.
+pactl set-sink-volume 1 150%

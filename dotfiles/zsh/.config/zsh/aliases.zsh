@@ -57,3 +57,6 @@ alias tks='tmux kill-session -t'
 # Redshift
 alias redup='redshift -l 19.07:72.87 > /dev/null 2>&1 &'
 alias redown='pkill redshift'
+
+# Productivity
+alias please='sudo $(fc -ln -1)'
