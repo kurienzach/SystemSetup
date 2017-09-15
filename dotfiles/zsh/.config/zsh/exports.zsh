@@ -29,3 +29,5 @@ export PAGER='less'
 # Export for TMUX
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
 
+export PATH=$PATH:/home/kurien/Documents/SystemSetup/scripts/bin/
+
