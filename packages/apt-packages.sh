@@ -29,7 +29,7 @@ systemctl disable mysql.service
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install php5.6
-sudo apt-get install php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-xml php5.6-ldap
+sudo apt-get install php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-xml php5.6-ldap php5.6-zip
 
 # Albert app launcher
 sudo add-apt-repository ppa:nilarimogard/webupd8

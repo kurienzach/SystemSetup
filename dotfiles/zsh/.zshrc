@@ -65,7 +65,7 @@ source $HOME/.config/zsh/config.zsh
 autoload -U compaudit compinit
 
 # Open tmux by default if possible
-if [ -z "$TMUX" ]
-then
-    tmux attach -t TMUX || tmux new -s TMUX
-fi
+#if [ -z "$TMUX" ]
+#then
+    #tmux attach -t TMUX || tmux new -s TMUX
+#fi
