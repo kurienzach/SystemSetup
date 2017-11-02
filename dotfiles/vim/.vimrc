@@ -86,6 +86,8 @@ filetype indent on
 set autoindent 
 set smartindent
 set listchars=tab:▸\ ,eol:¬
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
 
 " Show 3 lines at the end of the screen while scrolling
 set scrolloff=5
