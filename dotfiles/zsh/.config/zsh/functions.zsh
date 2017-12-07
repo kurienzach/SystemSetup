@@ -65,3 +65,12 @@ function extract() {
   fi
 }
 
+## Execute cmd on file change
+function execOnChange() {
+  if [ -f "$1" ] ; then
+    while true; do inotifywait -qe close_write $1; echo "Running....\n"; $2; done
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+
